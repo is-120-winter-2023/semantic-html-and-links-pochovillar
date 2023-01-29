@@ -6,15 +6,15 @@ Create HTML pages using semantic markup. Include a navigation menu that links to
 
 Semantic HTML, navigation, relative paths, `<img>` and its attributes.
 
- ⚠️ This assignment builds on your _First web page_ assignment                                                                                                                                                                                                                                                                                                                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ⚠️ This assignment builds on your _First web page_ assignment                                                                                                                                                                                                                                                                                                                                                       |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | After cloning this repo and opening it in VSCode, copy the following files and folder from your _First web page_ assignment into this repo.<br><br><ul><li>📄 index.html</li><li>📄 favicon.ico</li><li>📁images</li></ul><br>**Make sure that you don't copy any other folders or files, including the `test` and `readme-assets` folders, the hidden `.git` and `.github` folders, and the `package.json` files** |
 
-## ⌨️ Update your  main `index.html` file
+## ⌨️ Update your main `index.html` file
 
 ### Add block-level semantic elements inside `<body>`
 
-| 💡 For review of semantic elements                                                                                                                                                                                                                                                                                                            |
+| 💡 For review of semantic elements                                                                                                                                                                                                                                                                                                                |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <ul><li>See w3school's [HTML semantic elements](https://www.w3schools.com/html/html5_semantic_elements.asp) for a helpful summary and list of tags.</li><li>Read the individual element's pages on MDN in the list in their [Semantics in HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html) section.</li></ul> |
 
@@ -22,7 +22,7 @@ After copying your `index.html` file from your _First web page_ assignment, open
 
 Below, I will give you a list of elements to add to your main page. Use your site topic to add content (text) inside the elements. The content is not as important as the structure of the page, so don't worry about spending a lot of time on writing "perfect" content.
 
-| 💡 Using Emmet abbreviations                                                                                                                                                                                                                                                        |
+| 💡 Using Emmet abbreviations                                                                                                                                                                                                                                                            |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | You can use Emmet abbreviations to quickly add HTML tags. Reference the [Emmet cheat sheet](https://docs.emmet.io/cheat-sheet/) for a list of abbreviations. See if you can come up with a one-line Emmet abbreviation that can generate all the tags listed in the requirements above. |
 
@@ -59,12 +59,11 @@ Add a `<figure>` to your page inside an `<article>`.
 
 You can use [Unsplash](https://unsplash.com/) to find images, but you must resize any image to 900px wide or less. [befunky](https://www.befunky.com/create/) is a free online site where you can easily crop and resize images.
 
-|⚠️ Save your original images.|
-|:---|
+| ⚠️ Save your original images.                                                                                                                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | We will need larger image sizes in later assignments. If you resize an image, save the original first. Place the original in an `originals` folder inside your `images` folder, or append `.original` (or something similar) to the file name. |
 
 Your `<figure>` should include an `<img>` and a `<figcaption>`.
-
 
 The image must be
 
@@ -75,20 +74,20 @@ The image element must
 
 - include a _relative_ path to the image file in the `images` folder
 
-  | ⚠️ Image and folder names                                                                                                                                                                                                                                                                                                                                                                                                   |
+  | ⚠️ Image and folder names                                                                                                                                                                                                                                                                                                                                                                                                          |
   | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | Never use spaces in an image or folder name that will be hosted on the web. Best practices are to always use lowercase letters and to use hyphens `-` (not underlines `_`) to separate words. <br><br>Since search engines look at image file names, give your image files descriptive names. For example, if you have a PNG image of a hedgehog, name the file `hedgehog.png` instead of something vague list `DCIMG-3033-54.png` |
 
 - include an `alt` attribute
 
-  | 💡 Writing `alt` text                                                                                                                                                                                                     |
+  | 💡 Writing `alt` text                                                                                                                                                                                                         |
   | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | Read a11y collective's [How to write great alt text](https://www.a11y-collective.com/how-to-write-great-alt-text/) for tips on writing good alt text. Remember to never include "image of..." in alt text as it is redundant. |
 
 - use both `height` and `width` attributes appropriately
 
-  | 💡 The `<img>` `height` and `width` attributes                                                                                                                                                                                      |
-  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | 💡 The `<img>` `height` and `width` attributes                                                                                                                                                                                                                                                                                                |
+  | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | The HTML size attributes must be set to an image's actual (intrinsic) dimensions and not used to size the image. Use CSS to resize images. For more info on why, reference Smashing Magazine's [Setting Height And Width On Images Is Important Again](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/) |
 
 #### 🤯 Using Emmet to auto-generate the `height` and `width` attributes
@@ -97,9 +96,9 @@ VS Code has a command **Emmet: Update Image Size** that will automatically add t
 
 ![emmet image size](readme-assets/emmet-image-size.gif)
 
-| 💡 Lazy loading images                                                                                                                                                                                      |
-  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Page loading speed is important for SEO and user engagement. By default, a browser makes calls to load all the images on a page, which can delay the rendering of a site with a lot of images. In search ranking, [Google penalizes pages with slow load times](https://developers.google.com/search/blog/2018/01/using-page-speed-in-mobile-search). Websites with many images that are off-screen or _below the fold_ (a term from newspapers where top stories were visible when a newspaper was folded in half, and less important stories were _below the fold_) often use lazy loading to allow a page to load faster by delaying calls to load images that are not immediately visible to a user. This used to done by JavaScript, but HTML has added a loading attribute to lazy load images. Adding  `loading="lazy"` to a `<img>` tag will tell the browser to delay loading an image until the user starts to scroll the page and get close to the image. When we add more images to our websites, add `loading="lazy"` to images below the fold |
+| 💡 Lazy loading images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Page loading speed is important for SEO and user engagement. By default, a browser makes calls to load all the images on a page, which can delay the rendering of a site with a lot of images. In search ranking, [Google penalizes pages with slow load times](https://developers.google.com/search/blog/2018/01/using-page-speed-in-mobile-search). Websites with many images that are off-screen or _below the fold_ (a term from newspapers where top stories were visible when a newspaper was folded in half, and less important stories were _below the fold_) often use lazy loading to allow a page to load faster by delaying calls to load images that are not immediately visible to a user. This used to done by JavaScript, but HTML has added a loading attribute to lazy load images. Adding `loading="lazy"` to a `<img>` tag will tell the browser to delay loading an image until the user starts to scroll the page and get close to the image. When we add more images to our websites, add `loading="lazy"` to images below the fold |
 
 ### :pencil: Text-level semantic elements
 
@@ -120,7 +119,7 @@ Feel free to modify the your About and Contact pages to include more content. We
 
 ## Add links to the navigation menus
 
-| 💡 Relative links                                                                                                                                                                                                                                                                                                                                                |
+| 💡 Relative links                                                                                                                                                                                                                                                                                                                                                    |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Review MDN's [A quick primer on URLs and paths](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#a_quick_primer_on_urls_and_paths) for a review of relative links. Since the target files in the subfolders are named `index.html`, you don't need to include `index.html` in the paths. This generates a "cleaner" URL. |
 
@@ -129,11 +128,11 @@ Feel free to modify the your About and Contact pages to include more content. We
 
 Check that all your links work and you can easily navigate between the pages.
 
-| 💡 Placeholder links                                                                                                                                                                                                                                                                                       |
+| 💡 Placeholder links                                                                                                                                                                                                                                                                                           |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | You may notice on the About subpage that the `<a>` element for the About link is missing an `href` (the contact page is the same). An `href` attribute is not required, and you don't need to link a page to itself. The lack of an `href` attribute will make it easier to style the menu when we get to CSS. |
 
-## 💻  Use Live Server to preview your webpage
+## 💻 Use Live Server to preview your webpage
 
 Before you open your webpage in Live Server, make sure all your files are saved, then check the bottom left status bar on VS Code. You want to make sure you don't have any errors or warnings which should look like this:
 
@@ -164,8 +163,8 @@ In your main repo page edit the About section. Enter a description of your repo 
 
 ## Validate your HTML with validator.nu
 
-| 💡 Why validate? |
-|:-----|
+| 💡 Why validate?                                                                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Remember to validate all your web pages before checking the automated tests. It's easier to find validator errors on `validator.nu` than in the GitHub validator action output. |
 
 Once your page is live, use the [validator.nu](https://validator.nu/) service to validate the HTML on all three of your web pages (main, contact, about). Select Show "outline" and "image report" then paste your page URL into the validator and click `Check`.
@@ -189,6 +188,7 @@ If you see a yellow dot, it means that the test is still running. Wait for the t
 ### Current automated tests
 
 - General HTML structure
+
   - REQUIRED FOR ALL PAGES
     - Conventions
       - main index.html has `<title>`, `<meta>` description and favicon info
